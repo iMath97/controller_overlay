@@ -1,141 +1,6 @@
-@charset "UTF-8";
-/**
- * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
- * http://cssreset.com
- */
-@import url(https://fonts.googleapis.com/css?family=Press+Start+2P);
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-
-body {
-  line-height: 1;
-}
-
-ol,
-ul {
-  list-style: none;
-}
-
-blockquote,
-q {
-  quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: "";
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
 /*Font Imports*/
+@import url(https://fonts.googleapis.com/css?family=Press+Start+2P);
+
 /*Keyframes*/
 @-webkit-keyframes messagefade {
   0% {
@@ -153,6 +18,7 @@ table {
     top: -51px;
   }
 }
+
 @-moz-keyframes messagefade {
   0% {
     opacity: 1;
@@ -169,6 +35,7 @@ table {
     top: -51px;
   }
 }
+
 @keyframes messagefade {
   0% {
     opacity: 1;
@@ -185,6 +52,7 @@ table {
     top: -51px;
   }
 }
+
 @keyframes helptip {
   0% {
     margin: 0 0 0 0px;
@@ -224,6 +92,7 @@ table {
     opacity: 0;
   }
 }
+
 @keyframes msg-animation {
   80% {
     opacity: 1;
@@ -242,6 +111,7 @@ table {
     visibility: hidden;
   }
 }
+
 /* Didn't work, used transitions instead
 @keyframes modal-flow {
     from {visibility: hidden;top:-100px;opacity: 0;}
@@ -252,6 +122,7 @@ table {
     to {transform: scale(1) rotateX(0deg) translateY(0%);}
 }*/
 /*END Keyframes*/
+
 /*Top Level Elements*/
 ::selection {
   background: rgba(9, 63, 59, 0.75);
@@ -264,7 +135,7 @@ sup {
 
 html,
 body {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   background: saddlebrown;
   overflow-y: hidden;
 }
@@ -555,7 +426,7 @@ strong {
   line-height: 0;
   color: white;
   opacity: 0;
-  font-family: "FontAwesome";
+  font-family: 'FontAwesome';
 }
 
 .xbox-old .face.pressed {
@@ -568,7 +439,7 @@ strong {
 }
 
 .xbox-old .face.up:after {
-  content: "";
+  content: '\f062';
 }
 
 .xbox-old .face.down {
@@ -577,7 +448,7 @@ strong {
 }
 
 .xbox-old .face.down:after {
-  content: "";
+  content: '\f063';
 }
 
 .xbox-old .face.left {
@@ -586,7 +457,7 @@ strong {
 }
 
 .xbox-old .face.left:after {
-  content: "";
+  content: '\f060';
 }
 
 .xbox-old .face.right {
@@ -595,7 +466,7 @@ strong {
 }
 
 .xbox-old .face.right:after {
-  content: "";
+  content: '\f061';
 }
 
 .xbox-old.half {
@@ -603,6 +474,7 @@ strong {
 }
 
 /*END Xbox 360 Controller Styling*/
+
 /*BEGIN Xbox One Controller Styling*/
 .controller.xbox {
   background: url(xbox-assets/base.svgz);
@@ -870,6 +742,7 @@ strong {
 }
 
 /*END Xbox One Controller Styling*/
+
 /*BEGIN PS3 Controller Styling*/
 .controller.ps {
   background: url(ps3-assets/base.png);
@@ -1129,6 +1002,7 @@ strong {
 }
 
 /*END PS3 Controller Styling*/
+
 /*BEGIN PS3 White Controller Styling*/
 .controller.ps.white {
   background-image: url(ps3-white-assets/base.png);
@@ -1168,6 +1042,7 @@ strong {
 }
 
 /*END PS3 White Controller Styling*/
+
 /*BEGIN PS4 Controller Styling*/
 .controller.ds4 {
   background: url(ps4-assets/base.svgz);
@@ -1451,6 +1326,7 @@ background-position: 0 -70px;
 }
 
 /*END PS4 Controller Styling*/
+
 /*BEGIN PS4 White Controller Styling*/
 .controller.ds4.white {
   background-image: url(ps4-white-assets/base.svgz);
@@ -1490,6 +1366,7 @@ background-position: 0 -70px;
 }
 
 /*END PS4 White Controller Styling*/
+
 /*BEGIN NES Controller Styling*/
 .controller.nes {
   background: url(nes-assets/base.png);
@@ -1508,7 +1385,7 @@ background-position: 0 -70px;
 }
 
 .nes .quadrant {
-  font-family: "Press Start 2P", cursive;
+  font-family: 'Press Start 2P', cursive;
   font-size: 16pt;
   color: white;
   position: absolute;
@@ -1520,19 +1397,19 @@ background-position: 0 -70px;
 }
 
 .nes .p0:after {
-  content: "Player 1";
+  content: 'Player 1';
 }
 
 .nes .p1:after {
-  content: "Player 2";
+  content: 'Player 2';
 }
 
 .nes .p2:after {
-  content: "Player 3";
+  content: 'Player 3';
 }
 
 .nes .p3:after {
-  content: "Player 4";
+  content: 'Player 4';
 }
 
 .nes .arrows {
@@ -1652,6 +1529,7 @@ background-position: 0 -70px;
 }
 
 /*END NES Controller Styling*/
+
 /*BEGIN FightPad Pro Controller Styling*/
 .controller.fpp {
   background: url(fpp-assets/base.svgz) center;
@@ -1719,7 +1597,7 @@ background-position: 0 -70px;
 }
 
 .fpp .bumper.right:after {
-  content: "";
+  content: '';
   position: absolute;
   background: url(fpp-assets/buttons.svgz) no-repeat;
   background-position: -280px 0px;
@@ -1763,7 +1641,7 @@ background-position: 0 -70px;
 }
 
 .fpp .arrows:before {
-  content: "";
+  content: '';
   position: absolute;
   width: 55px;
   height: 22px;
@@ -2016,7 +1894,7 @@ background-position: 0 -70px;
 
 .fight-stick .quadrant {
   position: absolute;
-  font-family: "Press Start 2P";
+  font-family: 'Press Start 2P';
   font-size: 28px;
   font-weight: normal;
   top: 20px;
@@ -2025,19 +1903,19 @@ background-position: 0 -70px;
 }
 
 .fight-stick .p0:after {
-  content: "Player 1";
+  content: 'Player 1';
 }
 
 .fight-stick .p1:after {
-  content: "Player 2";
+  content: 'Player 2';
 }
 
 .fight-stick .p2:after {
-  content: "Player 3";
+  content: 'Player 3';
 }
 
 .fight-stick .p3:after {
-  content: "Player 4";
+  content: 'Player 4';
 }
 
 .fight-stick .arrows {
@@ -2158,6 +2036,7 @@ background-position: 0 -70px;
 }
 
 /*END Fight Stick Controller Styling*/
+
 /*BEGIN GameCube Controller Styling*/
 .controller.gc {
   background: url(gc-assets/base.svgz) no-repeat;
@@ -2247,6 +2126,7 @@ background-position: 0 -49px;
 .gc .p3{
 background-position: 0 -70px;
 }*/
+
 .gc .arrows {
   position: absolute;
   width: 50px;
@@ -2422,6 +2302,7 @@ background-position: 0 -70px;
 }
 
 /*END GameCube Controller Styling*/
+
 /*Start N64 Styling*/
 .controller.n64 {
   background: url(n64-assets/base.svgz);
@@ -2598,8 +2479,8 @@ background-position: 0 -70px;
 .n64 .pressed {
   opacity: 1;
 }
-
 /*END N64 Styling*/
+
 /*Navbar Elements & their inner contents*/
 .navbar {
   height: 50px;
@@ -2648,6 +2529,7 @@ background-position: 0 -70px;
 .navbar .content .right {
     float: right;
 }*/
+
 .right a.button {
   top: 0;
   background: #ff9900;
@@ -2679,12 +2561,12 @@ background-position: 0 -70px;
 
 .tooltip:after {
   bottom: 13px;
-  color: white;
-  content: attr(data-tooltip) "➟";
+  color: rgb(255, 255, 255);
+  content: attr(data-tooltip) '\279F';
   display: block;
   left: -240px;
   position: absolute;
-  text-shadow: black 0px 1px 0px;
+  text-shadow: rgb(0, 0, 0) 0px 1px 0px;
   white-space: nowrap;
   font-size: 0.5em;
   text-align: right;
@@ -2750,28 +2632,28 @@ background-position: 0 -70px;
 
 .console.xbox,
 .console.xbox-old {
-  background: url("icons/xbx.png") no-repeat center;
+  background: url('icons/xbx.png') no-repeat center;
 }
 
 .console.ps,
 .console.ds4 {
-  background: url("icons/psn.png") no-repeat center;
+  background: url('icons/psn.png') no-repeat center;
 }
 
 .console.nes {
-  background: url("icons/nes.png") no-repeat center;
+  background: url('icons/nes.png') no-repeat center;
 }
 
 .console.fpp {
-  background: url("icons/fpp.png") no-repeat center;
+  background: url('icons/fpp.png') no-repeat center;
 }
 
 .console.fight-stick {
-  background: url("icons/fight-stick.png") no-repeat center;
+  background: url('icons/fight-stick.png') no-repeat center;
 }
 
 .console.gc {
-  background: url("icons/gc.png") no-repeat center;
+  background: url('icons/gc.png') no-repeat center;
 }
 
 #color-picker {
@@ -2935,6 +2817,9 @@ span.code {
     position: relative;
     margin: 0 auto;
 }*/
+.ac {
+}
+
 .title {
   width: 100%;
   line-height: normal;
@@ -3021,7 +2906,7 @@ span.code {
 }
 
 .log code {
-  font-family: "Consolas", monospace;
+  font-family: 'Consolas', monospace;
   white-space: pre-line;
 }
 
@@ -3055,7 +2940,7 @@ span.code {
 .update {
   background: darkred;
   z-index: 11;
-  border-bottom: 1px solid #7d0000;
+  border-bottom: 1px solid rgb(125, 0, 0);
   display: none;
 }
 
@@ -3128,6 +3013,7 @@ Help Box Stuff
     text-align: center;
     display: block;
 }*/
+
 /*CSS Slideout Menu*/
 a .menu-button {
   color: white;
@@ -3233,6 +3119,7 @@ a:active .menu-button {
     border-color: transparent rgba(0,0,0,.7) transparent transparent;
     box-sizing: border-box;
 }*/
+
 .menu ul {
   height: calc(100% - 50px);
   overflow-y: auto;
@@ -3370,6 +3257,7 @@ a:active .menu-button {
 .modal article > :last-child {
     margin-bottom: 18px;
 }*/
+
 .modal h1 {
   font-size: 3em;
 }
@@ -3393,12 +3281,12 @@ a:active .menu-button {
 }
 
 .modal .codeblock {
-  font-family: "Consolas", monospace;
+  font-family: 'Consolas', monospace;
   background: lightgrey;
   color: darkgoldenrod;
   word-wrap: break-word;
   border-radius: 5px;
-  border: 1px solid #c4c4c4;
+  border: 1px solid hsla(0, 0%, 77%, 1);
   text-shadow: rgba(0, 0, 0, 0.44) 0 0 0.1px;
 }
 
@@ -3478,7 +3366,7 @@ a:active .menu-button {
   position: relative;
 }
 
-.form-group [id*=-input] {
+.form-group [id*='-input'] {
   float: right;
   width: 535px;
   padding: 0px;
@@ -3490,13 +3378,13 @@ a:active .menu-button {
   font-size: 29px;
 }
 
-.form-group [id*=-input]:focus {
+.form-group [id*='-input']:focus {
   border-bottom: black 1px solid;
   outline: none;
 }
 
-#url-form .form-group [type=checkbox]:before {
-  content: "Disabled";
+#url-form .form-group [type='checkbox']:before {
+  content: 'Disabled';
   color: lightgray;
   display: block;
   position: absolute;
@@ -3508,24 +3396,24 @@ a:active .menu-button {
   right: -3px;
 }
 
-#url-form .form-group [type=checkbox]:checked:before {
-  content: "Enabled";
+#url-form .form-group [type='checkbox']:checked:before {
+  content: 'Enabled';
   background: rgba(0, 110, 0, 0.8);
 }
 
-#url-form .form-group [type=checkbox] {
+#url-form .form-group [type='checkbox'] {
   width: 0;
   height: 0;
   position: relative;
 }
 
-#url-form .form-group .flipped[type=checkbox]:before {
-  content: "Enabled";
+#url-form .form-group .flipped[type='checkbox']:before {
+  content: 'Enabled';
   background: rgba(0, 110, 0, 0.8);
 }
 
-#url-form .form-group .flipped[type=checkbox]:checked:before {
-  content: "Disabled";
+#url-form .form-group .flipped[type='checkbox']:checked:before {
+  content: 'Disabled';
   background: rgba(255, 0, 0, 0.8);
 }
 
@@ -3534,7 +3422,7 @@ a:active .menu-button {
   right: 0;
 }
 
-.form-group .input-unit + [id*=-input] {
+.form-group .input-unit + [id*='-input'] {
   width: 474px;
   padding-right: 60px;
 }
@@ -3547,12 +3435,12 @@ a:active .menu-button {
   content: attr(data-param);
   margin-left: 5px;
   padding: 3px;
-  font-family: "Consolas", monospace;
+  font-family: 'Consolas', monospace;
   background: lightgrey;
   color: darkgoldenrod;
   word-wrap: break-word;
   border-radius: 5px;
-  border: 1px solid #c4c4c4;
+  border: 1px solid hsla(0, 0%, 77%, 1);
   text-shadow: rgba(0, 0, 0, 0.44) 0 0 0.1px;
 }
 
@@ -3571,22 +3459,22 @@ a:active .menu-button {
 }
 
 #docs .definition li:before {
-  content: "‒";
+  content: '\2012';
   margin-right: 4px;
 }
 
 #docs .definition li:nth-child(1):before {
-  content: "UNIT: ";
+  content: 'UNIT: ';
   font-weight: bold;
 }
 
 #docs .definition li:nth-child(2):before {
-  content: "DEFAULT VALUE: ";
+  content: 'DEFAULT VALUE: ';
   font-weight: bold;
 }
 
 #docs .definition li:nth-child(3):before {
-  content: "ACCEPTABLE VALUES: ";
+  content: 'ACCEPTABLE VALUES: ';
   font-weight: bold;
 }
 
@@ -3625,7 +3513,7 @@ a:active .menu-button {
   display: block;
   position: absolute;
   font-size: 16px;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   color: whitesmoke;
   transform: translatex(-50%);
   opacity: 0;
@@ -3642,12 +3530,12 @@ a:active .menu-button {
 }
 
 #generated-url:before {
-  content: " ";
+  content: ' ';
   border-left: transparent solid 9px;
   width: 0px;
   height: 0px;
   border-right: transparent solid 9px;
-  border-top: black solid 11px;
+  border-top: rgb(0, 0, 0) solid 11px;
   left: 50%;
   margin-top: -1px;
 }
@@ -3781,7 +3669,7 @@ a:active .menu-button {
   color: red;
 }
 
-#mapping-config input[type=radio],
+#mapping-config input[type='radio'],
 #mapping-config .disable-item {
   margin-right: 70px;
   display: inline-block;
@@ -3792,11 +3680,11 @@ a:active .menu-button {
   transition: 0.4s ease-out;
 }
 
-#mapping-config input[type=radio][value=axes] {
+#mapping-config input[type='radio'][value='axes'] {
   margin-right: 50px;
 }
 
-#mapping-config input[type=radio][value=dpad] {
+#mapping-config input[type='radio'][value='dpad'] {
   margin-right: 36px;
 }
 
@@ -3804,7 +3692,7 @@ a:active .menu-button {
   margin-left: 6px;
 }
 
-#mapping-config input[type=radio]:checked,
+#mapping-config input[type='radio']:checked,
 #mapping-config .disable-item:checked {
   opacity: 1;
 }
@@ -3814,9 +3702,9 @@ a:active .menu-button {
   pointer-events: none;
 }
 
-#mapping-config input[value=buttons]:after,
-#mapping-config input[value=axes]:after,
-#mapping-config input[value=dpad]:after,
+#mapping-config input[value='buttons']:after,
+#mapping-config input[value='axes']:after,
+#mapping-config input[value='dpad']:after,
 #mapping-config .disable-item:after {
   display: inline-block;
   background: orangered;
@@ -3826,33 +3714,33 @@ a:active .menu-button {
   cursor: pointer;
 }
 
-#mapping-config input[value=buttons]:after {
-  content: "Button";
+#mapping-config input[value='buttons']:after {
+  content: 'Button';
 }
 
-#mapping-config input[value=axes]:after {
-  content: "Axis";
+#mapping-config input[value='axes']:after {
+  content: 'Axis';
 }
 
-#mapping-config input[value=dpad]:after {
-  font-family: "Material Icons";
-  content: "gamepad";
+#mapping-config input[value='dpad']:after {
+  font-family: 'Material Icons';
+  content: 'gamepad';
   font-size: 23px;
 }
 
 #mapping-config .disable-item:after {
-  content: "Disable";
+  content: 'Disable';
 }
 
 #mapping-config .axes-config:after {
   font-family: inherit;
-  content: "check_box_outline_blank";
+  content: 'check_box_outline_blank';
   line-height: inherit;
   cursor: pointer;
 }
 
 #mapping-config .axes-config:checked:after {
-  content: "check_box";
+  content: 'check_box';
 }
 
 #mapping-config .axes-config {
@@ -3871,8 +3759,8 @@ a:active .menu-button {
   order: -1;
 }
 
-#mapping-config #mappings input[value=buttons]:checked ~ select[name=buttons],
-#mapping-config #mappings input[value=axes]:checked ~ select[name=axes] {
+#mapping-config #mappings input[value='buttons']:checked ~ select[name='buttons'],
+#mapping-config #mappings input[value='axes']:checked ~ select[name='axes'] {
   display: inline-block;
 }
 
@@ -3909,7 +3797,7 @@ a:active .menu-button {
 }
 
 #mapping-config #mappings .axes-config:checked ~ .fix-axes,
-#mapping-config #mappings input[type=radio][value=dpad]:checked ~ .fix-dpad {
+#mapping-config #mappings input[type='radio'][value='dpad']:checked ~ .fix-dpad {
   display: flex;
 }
 
@@ -3917,18 +3805,18 @@ a:active .menu-button {
   display: none !important;
 }
 
-#mapping-config #mappings input[value=dpad]:checked ~ .axes-config,
-#mapping-config #mappings input[value=dpad]:checked ~ .fix-axes {
+#mapping-config #mappings input[value='dpad']:checked ~ .axes-config,
+#mapping-config #mappings input[value='dpad']:checked ~ .fix-axes {
   display: none;
 }
 
-#mapping-config #mappings input[value=axes]:checked ~ .axes-config:not(:checked) ~ [data-tooltip]:hover:after,
+#mapping-config #mappings input[value='axes']:checked ~ .axes-config:not(:checked) ~ [data-tooltip]:hover:after,
 #mapping-config #mappings .fix-axes [data-tooltip]:hover:after {
   opacity: 1;
   top: -28px;
 }
 
-#mapping-config #mappings input[value=axes]:checked ~ button:nth-of-type(2) {
+#mapping-config #mappings input[value='axes']:checked ~ button:nth-of-type(2) {
   display: block;
 }
 
@@ -3945,7 +3833,7 @@ a:active .menu-button {
 
 #mapping-config #mappings .map-message.error {
   display: block;
-  background: #ed1212;
+  background: hsla(0, 86%, 50%, 1);
 }
 
 #mapping-config #mappings .map-message.success {
@@ -3979,6 +3867,9 @@ a:active .menu-button {
   width: 200px;
   float: left;
   margin-right: 10px;
+}
+
+#showcase .description {
 }
 
 #adoptaskin p {
@@ -4122,7 +4013,7 @@ a:active .menu-button {
   display: none;
 }
 
-.disconnected[id*=gamepad-] .plshalpme {
+.disconnected[id*='gamepad-'] .plshalpme {
   display: block;
   position: absolute;
   width: 100%;
@@ -4130,7 +4021,7 @@ a:active .menu-button {
   background: darkred;
 }
 
-.disconnected[id*=gamepad-] .plshalpme div {
+.disconnected[id*='gamepad-'] .plshalpme div {
   display: block;
   /* margin: 0 auto; */
   /* width: 238px; */
@@ -4143,7 +4034,7 @@ a:active .menu-button {
   left: 50%;
 }
 
-.disconnected[id*=gamepad-] .plshalpme a {
+.disconnected[id*='gamepad-'] .plshalpme a {
   color: whitesmoke;
   text-decoration: none;
 }
@@ -4152,5 +4043,3 @@ a:active .menu-button {
 .active {
   display: block;
 }
-
-/*# sourceMappingURL=style.css.map */
