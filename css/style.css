@@ -188,7 +188,7 @@
 }
 .controller.custom .dpad .face.pressed {
   /* margin-top: 5px; */
-  background-position-y: 52px;
+  background-position-y: 52px !important;
 }
 .controller.custom .touchpad {
   width: 262px;
