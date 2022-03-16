@@ -1,7 +1,33 @@
 .controller.custom {
   background: url(https://gamepadviewer.com/ps4-assets/base.svgz);
-  height: 558px;
-  width: 784px;
+  background-repeat: no-repeat;
+  height: 598px;
+  width: 806px;
+}
+
+.custom.disconnected {
+  /* This class shows an image when the controller is disconnected */
+  background: url(https://gamepadviewer.com/ps4-assets/disconnected.svgz);
+}
+
+.custom.disconnected div {
+  display: none;
+}
+
+.custom .triggers {
+  /* The triggers are housed inside a div, so this sizes the div properly and positions it */
+  width: 586px;
+  height: 65px;
+  position: absolute;
+  left: 99px;
+}
+
+.custom .trigger {
+  /* These are the actual triggers themselves */
+  width: 86px;
+  height: 65px;
+  background: url(https://gamepadviewer.com/ps4-assets/triggers.svgz);
+  opacity: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
