@@ -1,37 +1,227 @@
 .controller.custom {
+  // general stuff
   background: url(https://gamepadviewer.com/ps4-assets/base.svgz);
   background-repeat: no-repeat;
   height: 598px;
   width: 806px;
+
+  .disconnected {
+    background: url(https://gamepadviewer.com/ps4-assets/disconnected.svgz);
+    div {
+      display: none;
+    }
+  }
+
+  // triggers
+  .triggers {
+    width: 588px;
+    height: 90px;
+    position: absolute;
+    left: 109px;
+
+    .trigger {
+      width: 99px;
+      height: 100%;
+      background: url(https://gamepadviewer.com/ps4-assets/triggers.svgz);
+      opacity: 0;
+
+      &.left {
+        float: left;
+      }
+
+      &.right {
+        float: right;
+      }
+    }
+  }
+
+  // bumpers
+  .bumpers {
+    position: absolute;
+    width: 588px;
+    height: 23px;
+    left: 109px;
+    top: 94px;
+
+    .bumper {
+      width: 99px;
+      height: 23px;
+      background: url(https://gamepadviewer.com/ps4-assets/bumper.svgz);
+      opacity: 0;
+
+      &.pressed {
+        opacity: 1;
+      }
+
+      &.left {
+        -webkit-transform: rotateY(180deg);
+        transform: rotateY(180deg);
+        float: left;
+      }
+
+      &.right {
+        float: right;
+      }
+    }
+  }
+
+  // arrows
+  .arrows {
+    position: absolute;
+    width: 352px;
+    height: 46px;
+    top: 142px;
+    left: 227px;
+
+    .back {
+      background: url(https://gamepadviewer.com/ps4-assets/start.svgz);
+      width: 28px;
+      height: 46px;
+      opacity: 0;
+      float: left;
+    }
+
+    .start {
+      background: url(https://gamepadviewer.com/ps4-assets/start.svgz);
+      width: 28px;
+      height: 46px;
+      opacity: 0;
+      float: right;
+      background-position: 28px 0;
+    }
+  }
+
+  // abxy
+  .abxy {
+    position: absolute;
+    width: 170px;
+    height: 171px;
+    top: 159px;
+    left: 567px;
+
+    .button {
+      position: absolute;
+      width: 55px;
+      height: 55px;
+      background: url(https://gamepadviewer.com/ps4-assets/face.svgz);
+
+      &.a {
+        background-position: 0 0;
+        bottom: 0;
+        left: 58px;
+      }
+
+      &.b {
+        background-position: -57px 0;
+        top: 58px;
+        right: 0px;
+      }
+
+      &.x {
+        background-position: -113px 0;
+        top: 58px;
+      }
+
+      &.y {
+        background-position: 55px 0;
+        left: 58px;
+      }
+    }
+  }
+
+  // sticks
+  .sticks {
+    position: absolute;
+    width: 361px;
+    height: 105px;
+    top: 308px;
+    left: 228px;
+
+    .stick {
+      position: absolute;
+      background: url(https://gamepadviewer.com/ps4-assets/sticks.svgz);
+      height: 94px;
+      width: 94px;
+
+      &.left {
+        top: 0;
+        left: 0;
+      }
+
+      &.right {
+        top: calc(100% - 105px);
+        left: calc(100% - 105px);
+      }
+    }
+  }
+
+  // dpad
+  .dpad {
+    position: absolute;
+    width: 125px;
+    height: 126px;
+    top: 181px;
+    left: 92px;
+
+    .face {
+      background: url(https://gamepadviewer.com/ps4-assets/dpad.svgz);
+      position: absolute;
+
+      &.up {
+        width: 36px;
+        height: 52px;
+        left: 44px;
+        top: 0;
+        background-position: -37px 0px;
+      }
+
+      &.down {
+        width: 36px;
+        height: 52px;
+        left: 44px;
+        bottom: 0;
+        background-position: 0px 0;
+      }
+
+      &.left {
+        width: 52px;
+        height: 36px;
+        top: 45px;
+        left: 0;
+        background-position: 104px 0;
+      }
+
+      &.right {
+        width: 52px;
+        height: 36px;
+        top: 45px;
+        right: 0px;
+        background-position: 52px 0;
+      }
+    }
+  }
+
+  // touchpad
+  .touchpad {
+    width: 262px;
+    height: 151px;
+    position: absolute;
+    left: 272px;
+    top: 122px;
+
+    &.pressed {
+      background: url(https://gamepadviewer.com/ps4-assets/touchpad.svgz) no-repeat center;
+    }
+  }
+
+  // meta
+  .meta {
+    width: 42px;
+    height: 42px;
+    position: absolute;
+    left: 382px;
+    bottom: 216px;
+  }
 }
 
-.custom.disconnected {
-  /* This class shows an image when the controller is disconnected */
-  background: url(https://gamepadviewer.com/ps4-assets/disconnected.svgz);
-}
-
-.custom.disconnected div {
-  display: none;
-}
-
-.custom .triggers {
-  /* The triggers are housed inside a div, so this sizes the div properly and positions it */
-  width: 588px;
-  height: 90px;
-  position: absolute;
-  left: 109px;
-}
-.custom .trigger {
-  /* These are the actual triggers themselves */
-  width: 99px;
-  height: 100%;
-  background: url(https://gamepadviewer.com/ps4-assets/triggers.svgz);
-  opacity: 0;
-}
-
-.custom .trigger.left {
-  float: left;
-}
-.custom .trigger.right {
-  float: right;
-}
+//
