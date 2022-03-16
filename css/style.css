@@ -99,7 +99,7 @@
   background: url(https://gamepadviewer.com/ps4-assets/face.svgz);
 }
 .controller.custom .abxy .button.pressed {
-  background-position-y: 55px;
+  background-position-y: 55px !important;
   /* margin-top: 5px; */
 }
 .controller.custom .abxy .button.a {
