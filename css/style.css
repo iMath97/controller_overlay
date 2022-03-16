@@ -167,7 +167,7 @@
   left: 92px;
 }
 .controller.custom .dpad .face {
-  background: url("../img/dpad.svgz");
+  background: url("../img/dpad.svg");
   position: absolute;
 }
 .controller.custom .dpad .face.up {
