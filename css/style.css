@@ -1,5 +1,5 @@
 .controller.custom {
-  background: url("../img/base.svgz");
+  background: url("../img/base.svg");
   background-repeat: no-repeat;
   height: 598px;
   width: 806px;
@@ -61,7 +61,7 @@
   left: 227px;
 }
 .controller.custom .arrows .back {
-  background: url(start.svgz);
+  background: url("../img/start.svg");
   width: 28px;
   height: 46px;
   opacity: 0;
@@ -73,7 +73,7 @@
   opacity: 1;
 }
 .controller.custom .arrows .start {
-  background: url(start.svgz);
+  background: url("../img/start.svg");
   width: 28px;
   height: 46px;
   opacity: 0;
@@ -141,7 +141,7 @@
 }
 .controller.custom .sticks .stick {
   position: absolute;
-  background: url("../img/sticks.svgz");
+  background: url("../img/sticks.svg");
   height: 94px;
   width: 94px;
 }

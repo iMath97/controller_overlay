@@ -1,6 +1,6 @@
 .controller.custom {
   // general stuff
-  background: url('../img/base.svgz');
+  background: url('../img/base.svg');
   background-repeat: no-repeat;
   height: 598px;
   width: 806px;
@@ -75,7 +75,7 @@
     left: 227px;
 
     .back {
-      background: url(start.svgz);
+      background: url('../img/start.svg');
       width: 28px;
       height: 46px;
       opacity: 0;
@@ -89,7 +89,7 @@
     }
 
     .start {
-      background: url(start.svgz);
+      background: url('../img/start.svg');
       width: 28px;
       height: 46px;
       opacity: 0;
@@ -168,7 +168,7 @@
 
     .stick {
       position: absolute;
-      background: url('../img/sticks.svgz');
+      background: url('../img/sticks.svg');
       height: 94px;
       width: 94px;
 
