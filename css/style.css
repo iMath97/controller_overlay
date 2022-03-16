@@ -1,5 +1,5 @@
 .controller.custom {
-  background: url(https://gamepadviewer.com/ps4-assets/base.svgz);
+  background: url("../img/base.svgz");
   background-repeat: no-repeat;
   height: 598px;
   width: 806px;
