@@ -98,27 +98,39 @@
   height: 55px;
   background: url(https://gamepadviewer.com/ps4-assets/face.svgz);
 }
-.controller.custom .abxy .button.pressed {
-  background-position-y: 55px;
-  /* margin-top: 5px; */
-}
-.controller.custom .abxy.a {
+.controller.custom .abxy .button.a {
   background-position: 0 0;
   bottom: 0;
   left: 58px;
 }
-.controller.custom .abxy.b {
+.controller.custom .abxy .button.a.pressed {
+  background-position-y: 55px;
+  /* margin-top: 5px; */
+}
+.controller.custom .abxy .button.b {
   background-position: -57px 0;
   top: 58px;
   right: 0px;
 }
-.controller.custom .abxy.x {
+.controller.custom .abxy .button.b.pressed {
+  background-position-y: 55px;
+  /* margin-top: 5px; */
+}
+.controller.custom .abxy .button.x {
   background-position: -113px 0;
   top: 58px;
 }
-.controller.custom .abxy.y {
+.controller.custom .abxy .button.x.pressed {
+  background-position-y: 55px;
+  /* margin-top: 5px; */
+}
+.controller.custom .abxy .button.y {
   background-position: 55px 0;
   left: 58px;
+}
+.controller.custom .abxy .button.y.pressed {
+  background-position-y: 55px;
+  /* margin-top: 5px; */
 }
 .controller.custom .sticks {
   position: absolute;

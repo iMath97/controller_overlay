@@ -118,32 +118,43 @@
       height: 55px;
       background: url(https://gamepadviewer.com/ps4-assets/face.svgz);
 
-      &.pressed {
-        background-position-y: 55px;
-        /* margin-top: 5px; */
+      &.a {
+        background-position: 0 0;
+        bottom: 0;
+        left: 58px;
+        &.pressed {
+          background-position-y: 55px;
+          /* margin-top: 5px; */
+        }
       }
-    }
 
-    &.a {
-      background-position: 0 0;
-      bottom: 0;
-      left: 58px;
-    }
+      &.b {
+        background-position: -57px 0;
+        top: 58px;
+        right: 0px;
+        &.pressed {
+          background-position-y: 55px;
+          /* margin-top: 5px; */
+        }
+      }
 
-    &.b {
-      background-position: -57px 0;
-      top: 58px;
-      right: 0px;
-    }
+      &.x {
+        background-position: -113px 0;
+        top: 58px;
+        &.pressed {
+          background-position-y: 55px;
+          /* margin-top: 5px; */
+        }
+      }
 
-    &.x {
-      background-position: -113px 0;
-      top: 58px;
-    }
-
-    &.y {
-      background-position: 55px 0;
-      left: 58px;
+      &.y {
+        background-position: 55px 0;
+        left: 58px;
+        &.pressed {
+          background-position-y: 55px;
+          /* margin-top: 5px; */
+        }
+      }
     }
   }
 
