@@ -55,13 +55,12 @@
       }
 
       &.left {
-        -webkit-transform: rotateY(180deg);
-        transform: rotateY(180deg);
         float: left;
       }
 
       &.right {
         float: right;
+        -webkit-transform: rotateY(180deg);
         transform: rotateY(180deg);
       }
     }
@@ -196,11 +195,6 @@
       background: url(https://gamepadviewer.com/ps4-assets/dpad.svgz);
       position: absolute;
 
-      &.pressed {
-        /* margin-top: 5px; */
-        background-position-y: 52px;
-      }
-
       &.up {
         width: 36px;
         height: 52px;
@@ -231,6 +225,11 @@
         top: 45px;
         right: 0px;
         background-position: 52px 0;
+      }
+
+      &.pressed {
+        /* margin-top: 5px; */
+        background-position-y: 52px;
       }
     }
   }

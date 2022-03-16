@@ -46,12 +46,11 @@
   opacity: 1;
 }
 .controller.custom .bumpers .bumper.left {
-  -webkit-transform: rotateY(180deg);
-  transform: rotateY(180deg);
   float: left;
 }
 .controller.custom .bumpers .bumper.right {
   float: right;
+  -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
 }
 .controller.custom .arrows {
@@ -159,10 +158,6 @@
   background: url(https://gamepadviewer.com/ps4-assets/dpad.svgz);
   position: absolute;
 }
-.controller.custom .dpad .face.pressed {
-  /* margin-top: 5px; */
-  background-position-y: 52px;
-}
 .controller.custom .dpad .face.up {
   width: 36px;
   height: 52px;
@@ -190,6 +185,10 @@
   top: 45px;
   right: 0px;
   background-position: 52px 0;
+}
+.controller.custom .dpad .face.pressed {
+  /* margin-top: 5px; */
+  background-position-y: 52px;
 }
 .controller.custom .touchpad {
   width: 262px;
