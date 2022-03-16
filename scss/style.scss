@@ -112,6 +112,18 @@
     top: 159px;
     left: 567px;
 
+    .button {
+      position: absolute;
+      width: 55px;
+      height: 55px;
+      background: url(https://gamepadviewer.com/ps4-assets/face.svgz);
+
+      &.pressed {
+        background-position-y: 55px;
+        /* margin-top: 5px; */
+      }
+    }
+
     &.a {
       background-position: 0 0;
       bottom: 0;
@@ -132,18 +144,6 @@
     &.y {
       background-position: 55px 0;
       left: 58px;
-    }
-
-    .button {
-      position: absolute;
-      width: 55px;
-      height: 55px;
-      background: url(https://gamepadviewer.com/ps4-assets/face.svgz);
-
-      &.pressed {
-        background-position-y: 55px !important;
-        /* margin-top: 5px; */
-      }
     }
   }
 
