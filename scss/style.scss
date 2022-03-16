@@ -6,7 +6,7 @@
   width: 806px;
 
   .disconnected {
-    background: url(https://gamepadviewer.com/ps4-assets/disconnected.svgz);
+    background: url('../img/disconnected.svgz');
     div {
       display: none;
     }
@@ -22,7 +22,7 @@
     .trigger {
       width: 99px;
       height: 100%;
-      background: url(https://gamepadviewer.com/ps4-assets/triggers.svgz);
+      background: url('../img/triggers.svgz');
       opacity: 0;
 
       &.left {
@@ -47,7 +47,7 @@
     .bumper {
       width: 99px;
       height: 23px;
-      background: url(https://gamepadviewer.com/ps4-assets/bumper.svgz) no-repeat;
+      background: url('../img/bumper.svgz') no-repeat;
       opacity: 0;
 
       &.pressed {
@@ -75,7 +75,7 @@
     left: 227px;
 
     .back {
-      background: url(https://gamepadviewer.com/ps4-assets/start.svgz);
+      background: url(start.svgz);
       width: 28px;
       height: 46px;
       opacity: 0;
@@ -89,7 +89,7 @@
     }
 
     .start {
-      background: url(https://gamepadviewer.com/ps4-assets/start.svgz);
+      background: url(start.svgz);
       width: 28px;
       height: 46px;
       opacity: 0;
@@ -116,7 +116,7 @@
       position: absolute;
       width: 55px;
       height: 55px;
-      background: url(https://gamepadviewer.com/ps4-assets/face.svgz);
+      background: url('../img/face.svgz');
 
       &.a {
         background-position: 0 0;
@@ -168,7 +168,7 @@
 
     .stick {
       position: absolute;
-      background: url(https://gamepadviewer.com/ps4-assets/sticks.svgz);
+      background: url('../img/sticks.svgz');
       height: 94px;
       width: 94px;
 
@@ -203,7 +203,7 @@
     left: 92px;
 
     .face {
-      background: url(https://gamepadviewer.com/ps4-assets/dpad.svgz);
+      background: url('../img/dpad.svgz');
       position: absolute;
 
       &.up {
@@ -254,7 +254,7 @@
     top: 122px;
 
     &.pressed {
-      background: url(https://gamepadviewer.com/ps4-assets/touchpad.svgz) no-repeat center;
+      background: url('../img/touchpad.svgz') no-repeat center;
     }
   }
 
@@ -267,7 +267,7 @@
     bottom: 216px;
 
     &.pressed {
-      background: url(https://gamepadviewer.com/ps4-assets/meta.svgz) no-repeat center;
+      background: url('../img/meta.svgz') no-repeat center;
     }
   }
 }

@@ -5,7 +5,7 @@
   width: 806px;
 }
 .controller.custom .disconnected {
-  background: url(https://gamepadviewer.com/ps4-assets/disconnected.svgz);
+  background: url("../img/disconnected.svgz");
 }
 .controller.custom .disconnected div {
   display: none;
@@ -19,7 +19,7 @@
 .controller.custom .triggers .trigger {
   width: 99px;
   height: 100%;
-  background: url(https://gamepadviewer.com/ps4-assets/triggers.svgz);
+  background: url("../img/triggers.svgz");
   opacity: 0;
 }
 .controller.custom .triggers .trigger.left {
@@ -39,7 +39,7 @@
 .controller.custom .bumpers .bumper {
   width: 99px;
   height: 23px;
-  background: url(https://gamepadviewer.com/ps4-assets/bumper.svgz) no-repeat;
+  background: url("../img/bumper.svgz") no-repeat;
   opacity: 0;
 }
 .controller.custom .bumpers .bumper.pressed {
@@ -61,7 +61,7 @@
   left: 227px;
 }
 .controller.custom .arrows .back {
-  background: url(https://gamepadviewer.com/ps4-assets/start.svgz);
+  background: url(start.svgz);
   width: 28px;
   height: 46px;
   opacity: 0;
@@ -73,7 +73,7 @@
   opacity: 1;
 }
 .controller.custom .arrows .start {
-  background: url(https://gamepadviewer.com/ps4-assets/start.svgz);
+  background: url(start.svgz);
   width: 28px;
   height: 46px;
   opacity: 0;
@@ -96,7 +96,7 @@
   position: absolute;
   width: 55px;
   height: 55px;
-  background: url(https://gamepadviewer.com/ps4-assets/face.svgz);
+  background: url("../img/face.svgz");
 }
 .controller.custom .abxy .button.a {
   background-position: 0 0;
@@ -141,7 +141,7 @@
 }
 .controller.custom .sticks .stick {
   position: absolute;
-  background: url(https://gamepadviewer.com/ps4-assets/sticks.svgz);
+  background: url("../img/sticks.svgz");
   height: 94px;
   width: 94px;
 }
@@ -167,7 +167,7 @@
   left: 92px;
 }
 .controller.custom .dpad .face {
-  background: url(https://gamepadviewer.com/ps4-assets/dpad.svgz);
+  background: url("../img/dpad.svgz");
   position: absolute;
 }
 .controller.custom .dpad .face.up {
@@ -210,7 +210,7 @@
   top: 122px;
 }
 .controller.custom .touchpad.pressed {
-  background: url(https://gamepadviewer.com/ps4-assets/touchpad.svgz) no-repeat center;
+  background: url("../img/touchpad.svgz") no-repeat center;
 }
 .controller.custom .meta {
   width: 42px;
@@ -220,7 +220,7 @@
   bottom: 216px;
 }
 .controller.custom .meta.pressed {
-  background: url(https://gamepadviewer.com/ps4-assets/meta.svgz) no-repeat center;
+  background: url("../img/meta.svgz") no-repeat center;
 }
 
 /*# sourceMappingURL=style.css.map */
