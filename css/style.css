@@ -27,6 +27,7 @@
 }
 .controller.custom .triggers .trigger.right {
   float: right;
+  background-position-x: 99px;
 }
 .controller.custom .bumpers {
   position: absolute;
@@ -38,7 +39,7 @@
 .controller.custom .bumpers .bumper {
   width: 99px;
   height: 23px;
-  background: url(https://gamepadviewer.com/ps4-assets/bumper.svgz);
+  background: url(https://gamepadviewer.com/ps4-assets/bumper.svgz) no-repeat;
   opacity: 0;
 }
 .controller.custom .bumpers .bumper.pressed {
@@ -51,6 +52,7 @@
 }
 .controller.custom .bumpers .bumper.right {
   float: right;
+  transform: rotateY(180deg);
 }
 .controller.custom .arrows {
   position: absolute;
@@ -66,6 +68,11 @@
   opacity: 0;
   float: left;
 }
+.controller.custom .arrows .back.pressed {
+  /* background-position-y: -21px; */
+  /* margin-top: 2px; */
+  opacity: 1;
+}
 .controller.custom .arrows .start {
   background: url(https://gamepadviewer.com/ps4-assets/start.svgz);
   width: 28px;
@@ -73,6 +80,11 @@
   opacity: 0;
   float: right;
   background-position: 28px 0;
+}
+.controller.custom .arrows .start.pressed {
+  /* background-position-y: -21px; */
+  /* margin-top: 2px; */
+  opacity: 1;
 }
 .controller.custom .abxy {
   position: absolute;
@@ -86,6 +98,10 @@
   width: 55px;
   height: 55px;
   background: url(https://gamepadviewer.com/ps4-assets/face.svgz);
+}
+.controller.custom .abxy .button.pressed {
+  background-position-y: 55px;
+  /* margin-top: 5px; */
 }
 .controller.custom .abxy .button.a {
   background-position: 0 0;
@@ -126,6 +142,12 @@
   top: calc(100% - 105px);
   left: calc(100% - 105px);
 }
+.controller.custom .sticks .stick.pressed.left {
+  background-position-x: -96px;
+}
+.controller.custom .sticks .stick.pressed.right {
+  background-position-x: -192px;
+}
 .controller.custom .dpad {
   position: absolute;
   width: 125px;
@@ -136,6 +158,10 @@
 .controller.custom .dpad .face {
   background: url(https://gamepadviewer.com/ps4-assets/dpad.svgz);
   position: absolute;
+}
+.controller.custom .dpad .face.pressed {
+  /* margin-top: 5px; */
+  background-position-y: 52px;
 }
 .controller.custom .dpad .face.up {
   width: 36px;
@@ -181,6 +207,9 @@
   position: absolute;
   left: 382px;
   bottom: 216px;
+}
+.controller.custom .meta.pressed {
+  background: url(https://gamepadviewer.com/ps4-assets/meta.svgz) no-repeat center;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -31,6 +31,7 @@
 
       &.right {
         float: right;
+        background-position-x: 99px;
       }
     }
   }
@@ -46,7 +47,7 @@
     .bumper {
       width: 99px;
       height: 23px;
-      background: url(https://gamepadviewer.com/ps4-assets/bumper.svgz);
+      background: url(https://gamepadviewer.com/ps4-assets/bumper.svgz) no-repeat;
       opacity: 0;
 
       &.pressed {
@@ -61,6 +62,7 @@
 
       &.right {
         float: right;
+        transform: rotateY(180deg);
       }
     }
   }
@@ -79,6 +81,12 @@
       height: 46px;
       opacity: 0;
       float: left;
+
+      &.pressed {
+        /* background-position-y: -21px; */
+        /* margin-top: 2px; */
+        opacity: 1;
+      }
     }
 
     .start {
@@ -88,6 +96,12 @@
       opacity: 0;
       float: right;
       background-position: 28px 0;
+
+      &.pressed {
+        /* background-position-y: -21px; */
+        /* margin-top: 2px; */
+        opacity: 1;
+      }
     }
   }
 
@@ -104,6 +118,11 @@
       width: 55px;
       height: 55px;
       background: url(https://gamepadviewer.com/ps4-assets/face.svgz);
+
+      &.pressed {
+        background-position-y: 55px;
+        /* margin-top: 5px; */
+      }
 
       &.a {
         background-position: 0 0;
@@ -152,6 +171,16 @@
         top: calc(100% - 105px);
         left: calc(100% - 105px);
       }
+
+      &.pressed {
+        &.left {
+          background-position-x: -96px;
+        }
+
+        &.right {
+          background-position-x: -192px;
+        }
+      }
     }
   }
 
@@ -166,6 +195,11 @@
     .face {
       background: url(https://gamepadviewer.com/ps4-assets/dpad.svgz);
       position: absolute;
+
+      &.pressed {
+        /* margin-top: 5px; */
+        background-position-y: 52px;
+      }
 
       &.up {
         width: 36px;
@@ -221,6 +255,10 @@
     position: absolute;
     left: 382px;
     bottom: 216px;
+
+    &.pressed {
+      background: url(https://gamepadviewer.com/ps4-assets/meta.svgz) no-repeat center;
+    }
   }
 }
 
