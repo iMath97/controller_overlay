@@ -30,4 +30,12 @@
   opacity: 0;
 }
 
+.custom .trigger.left {
+  float: left;
+}
+
+.custom .trigger.right {
+  float: right;
+}
+
 /*# sourceMappingURL=style.css.map */
