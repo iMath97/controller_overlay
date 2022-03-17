@@ -6,7 +6,7 @@
   width: 806px;
 
   .disconnected {
-    background: url('../img/disconnected.svgz');
+    background: url('../img/disconnected.svg');
     div {
       display: none;
     }
@@ -22,7 +22,7 @@
     .trigger {
       width: 99px;
       height: 100%;
-      background: url('../img/triggers.svgz');
+      background: url('../img/triggers.svg');
       opacity: 0;
 
       &.left {
@@ -47,7 +47,7 @@
     .bumper {
       width: 99px;
       height: 23px;
-      background: url('../img/bumper.svgz') no-repeat;
+      background: url('../img/bumper.svg') no-repeat;
       opacity: 0;
 
       &.pressed {
@@ -254,7 +254,7 @@
     top: 122px;
 
     &.pressed {
-      background: url('../img/touchpad.svgz') no-repeat center;
+      background: url('../img/touchpad.svg') no-repeat center;
     }
   }
 

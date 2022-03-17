@@ -5,7 +5,7 @@
   width: 806px;
 }
 .controller.custom .disconnected {
-  background: url("../img/disconnected.svgz");
+  background: url("../img/disconnected.svg");
 }
 .controller.custom .disconnected div {
   display: none;
@@ -19,7 +19,7 @@
 .controller.custom .triggers .trigger {
   width: 99px;
   height: 100%;
-  background: url("../img/triggers.svgz");
+  background: url("../img/triggers.svg");
   opacity: 0;
 }
 .controller.custom .triggers .trigger.left {
@@ -39,7 +39,7 @@
 .controller.custom .bumpers .bumper {
   width: 99px;
   height: 23px;
-  background: url("../img/bumper.svgz") no-repeat;
+  background: url("../img/bumper.svg") no-repeat;
   opacity: 0;
 }
 .controller.custom .bumpers .bumper.pressed {
@@ -210,7 +210,7 @@
   top: 122px;
 }
 .controller.custom .touchpad.pressed {
-  background: url("../img/touchpad.svgz") no-repeat center;
+  background: url("../img/touchpad.svg") no-repeat center;
 }
 .controller.custom .meta {
   width: 42px;
