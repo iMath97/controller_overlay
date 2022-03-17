@@ -96,7 +96,7 @@
   position: absolute;
   width: 55px;
   height: 55px;
-  background: url("../img/face.svgz");
+  background: url("../img/face.svg");
 }
 .controller.custom .abxy .button.a {
   background-position: 0 0;
